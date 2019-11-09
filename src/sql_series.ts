@@ -98,7 +98,7 @@ export default class SqlSeries {
         });
 
         each(metrics, function (datapoints, seriesName) {
-            timeSeries.push({target: seriesName, datapoints: self.extrapolate(datapoints)});
+            timeSeries.push({target: seriesName, datapoints: datapoints});
         });
 
         return timeSeries;
